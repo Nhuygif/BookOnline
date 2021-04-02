@@ -22,7 +22,10 @@
         .auto-style10 {
             font-size: x-large;
         }
-    </style>
+        .auto-style13 {
+            margin-left: 30px;
+        }
+        </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
              <table style="width:100%;">
@@ -46,22 +49,28 @@
             <td align="left" style="text-align: left">
             <asp:TextBox ID="TextBox2" runat="server" TextMode="Password" Width="130px" Height="22px"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" Display="Dynamic" ErrorMessage="(*)" ForeColor="Red"></asp:RequiredFieldValidator>
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style8">
-                &nbsp;</td>
-            <td style="text-align: left">
-                <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/image/button_login.gif" OnClick="ImageButton1_Click" />
-                <asp:ImageButton ID="ImageButton3" runat="server" Height="39px" Width="114px" OnClick="ImageButton3_Click" CausesValidation="False" ImageUrl="~/image/Button-đăng-ký.png" />
-            </td>
-        </tr>
-        <tr>
-            <td class="auto-style8">
-                &nbsp;</td>
-            <td style="text-align: left">
                 <asp:Label ID="Label9" runat="server" ForeColor="Red"></asp:Label>
             </td>
+        </tr>
+        <tr>
+            <td class="auto-style8">
+                &nbsp;</td>
+            <td style="text-align: left">
+                <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/image/button_login.gif" OnClick="ImageButton1_Click" CssClass="auto-style13" Height="39px" Width="113px" />
+                
+                <asp:Button ID="Button3" runat="server" Text="Đăng kí ngay" BackColor="#0099FF" BorderStyle="Dashed" CssClass="auto-style13" ForeColor="White" Height="38px" OnClick="Button3_Click" Width="125px" CausesValidation="false"  />
+                
+                </td>
+            <td style ="text-align: center">
+                &nbsp;</td>
+                
+               
+        </tr>
+        <tr>
+            <td class="auto-style8">
+                &nbsp;</td>
+            
+                
         </tr>
         <tr>
             <td class="auto-style8">

@@ -14,9 +14,9 @@ public partial class DangNhap : System.Web.UI.Page
     {
         Label9.Text = "";
     }
-        protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
+    protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
     {
-        string STR_CONN = "Server=DESKTOP-2OTRN14\\SQLEXPRESS;uid=sa;pwd=111;database=BanSachOnline";
+        string STR_CONN = "Server=DELL;database=SQL_BanSachOnline";
         SqlConnection objCon = new SqlConnection(STR_CONN);
         objCon.Open();
         string SQL_Login = "Select * from TaiKhoan where Username=@Username and Pass=@Pass";
@@ -44,17 +44,21 @@ public partial class DangNhap : System.Web.UI.Page
                 Response.Redirect("Cart.aspx");
                 objCon.Close();
             }
-            }
-            else
-            {
-                Label9.Text ="Tên đăng nhập hoặc mật khẩu không đúng.xin đăng nhập lại";
-               dr.Close();
-               objCon.Close();
-            }
-        
+        }
+        else
+        {
+            Label9.Text = "Tên đăng nhập hoặc mật khẩu không đúng.xin đăng nhập lại";
+            dr.Close();
+            objCon.Close();
+        }
+
     }
-    protected void ImageButton3_Click(object sender, ImageClickEventArgs e)
+
+    protected void Button3_Click(object sender, EventArgs e)
     {
         Response.Redirect("Dangki.aspx");
     }
+
+
+
 }

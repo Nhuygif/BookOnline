@@ -21,24 +21,49 @@
          .auto-style6 {
              width: 20px;
              background-color: #FFFFFF;
+             
          }
          .style19 {
              text-align: left;
          }
          .auto-style7 {
-             color: #FFFFFF;
+             color: black;
+             width: 5px;
+             
          }
          .auto-style9 {
-             color: #CC0000;
+             color: yellow;
+         }
+         .auto-style10 {
+             height: 5px;
+
+         }
+         .auto-style11 {
+             width: 100%;
+             height: 67px;
+             background-color:yellow;
+         }
+         .auto-style12 {
+             width: 31px;
+         }
+         .auto-style13 {
+             width: 105px;
+         }
+         .auto-style14 {
+             width: 1025px;
+             
+         }
+         .auto-style15 {
+             width: 1017px;
+             height: 200px;
          }
          </style>
      </head>
-<body>
+<body style="height: 920px">
     <form id="form1" runat="server">
-      <div id ="banner">
-          <asp:Image ID="Image5" runat="server" Height="200px" Width="1020px" ImageUrl="~/image/1.jpg" />
-        </div>
-        <div id ="menungang">
+      <div id ="banner" >
+          <img class="auto-style15" src="image/Banner/res/you're%20a.png" /></div>
+        <div id ="menungang" class="auto-style14">
             <uc1:Menungang ID="Menungang1" runat="server" />
         </div>
         <div id ="leftpanel"> 
@@ -53,7 +78,7 @@
                     <table style="width:100%;" align="center">
                     <tr>
                        <td>
-                           <asp:Label ID="Label1" runat="server" Text="THỂ LOẠI SÁCH" Font-Bold="True" Font-Names="Arial" ForeColor="#FFFF99" style="text-align: center; color: #FFFF00; font-size: x-large; background-color: #000099;" BackColor="#669999" Width="100%"></asp:Label>
+                           <asp:Label ID="Label1" runat="server" Text="THỂ LOẠI SÁCH" Font-Bold="True" Font-Names="Arial" ForeColor="#FFFF99" style="text-align: center; color: #FFFF00; font-size: medium; background-color: #000099;" BackColor="#669999" Width="100%" Font-Overline="False" Font-Size="Small"></asp:Label>
                            <br />
                            </td>
                    </tr>
@@ -64,42 +89,42 @@
                        <td class="auto-style6">
                            &nbsp;</td>
                         <td>
-                           <asp:HyperLink ID="HyperLink8" runat="server" Font-Names="arial" ForeColor="#3366CC" style="width:100%; text-align: left;" NavigateUrl='~/TruyenTranh.aspx' Width="100%" Font-Bold="True">Truyện Tranh</asp:HyperLink>
+                           <asp:HyperLink ID="HyperLink8" runat="server" Font-Names="arial" ForeColor="YellowGreen" style="width:100%; text-align: left;" NavigateUrl='~/TruyenTranh.aspx' Width="100%" Font-Bold="True">Truyện Tranh</asp:HyperLink>
                             </td>
                         </tr>
                         <tr>
                            <td style="text-align: center" class="auto-style6">
                                &nbsp;</td>
                             <td>
-                                <asp:HyperLink ID="HyperLink9" runat="server" Font-Names="arial" ForeColor="#3366CC" style="width:100%; text-align: left;" NavigateUrl="~/TieuThuyet.aspx" Width="100%" Font-Bold="True">Tiểu Thuyết</asp:HyperLink>
+                                <asp:HyperLink ID="HyperLink9" runat="server" Font-Names="arial" ForeColor="YellowGreen" style="width:100%; text-align: left;" NavigateUrl="~/TieuThuyet.aspx" Width="100%" Font-Bold="True">Tiểu Thuyết</asp:HyperLink>
                             </td>
                             </tr>
                         <tr>
                             <td style="text-align: center" class="auto-style6">
                                 &nbsp;</td>
                             <td>
-                                <asp:HyperLink ID="HyperLink10" runat="server" Font-Names="arial" ForeColor="#3366CC" style="width:100%; text-align: left;" NavigateUrl="~/Giaoduc.aspx" Width="100%" Font-Bold="True">Giáo Dục</asp:HyperLink>
+                                <asp:HyperLink ID="HyperLink10" runat="server" Font-Names="arial" ForeColor="YellowGreen" style="width:100%; text-align: left;" NavigateUrl="~/Giaoduc.aspx" Width="100%" Font-Bold="True">Giáo Dục</asp:HyperLink>
                             </td>
                         </tr>
                       <tr>
                           <td style="text-align: center" class="auto-style6">
                               &nbsp;</td>
                           <td>
-                              <asp:HyperLink ID="HyperLink11" runat="server" Font-Names="arial" ForeColor="#3366CC" style="width:100%; text-align: left;" NavigateUrl="~/Truyenteen.aspx" Width="100%" Font-Bold="True">Truyện Teen</asp:HyperLink>
+                              <asp:HyperLink ID="HyperLink11" runat="server" Font-Names="arial" ForeColor="YellowGreen" style="width:100%; text-align: left;" NavigateUrl="~/Truyenteen.aspx" Width="100%" Font-Bold="True">Truyện Teen</asp:HyperLink>
                           </td>
                       </tr>
                      <tr>
                           <td style="text-align: center" class="auto-style6">
                               &nbsp;</td>
                           <td>
-                              <asp:HyperLink ID="HyperLink12" runat="server" Font-Names="arial" ForeColor="#3366CC" style="width:100%; text-align: left;" NavigateUrl="~/Khoahocvatunhien.aspx" Width="100%" Font-Bold="True">Sách Khoa Học Tự Nhiên</asp:HyperLink>
+                              <asp:HyperLink ID="HyperLink12" runat="server" Font-Names="arial" ForeColor="YellowGreen" style="width:100%; text-align: left;" NavigateUrl="~/Khoahocvatunhien.aspx" Width="100%" Font-Bold="True">Sách Khoa Học Tự Nhiên</asp:HyperLink>
                           </td>
                       </tr>
                      <tr>
                           <td style="text-align: center" class="auto-style6">
                               &nbsp;</td>
                           <td style="text-align: center">
-                              <asp:HyperLink ID="HyperLink13" runat="server" Font-Names="arial" ForeColor="#3366CC" style="width:100%; text-align: left;" NavigateUrl="~/ThieuNhi.aspx" Width="100%" Font-Bold="True">Sách Thiếu Nhi</asp:HyperLink>
+                              <asp:HyperLink ID="HyperLink13" runat="server" Font-Names="arial" ForeColor="YellowGreen" style="width:100%; text-align: left;" NavigateUrl="~/ThieuNhi.aspx" Width="100%" Font-Bold="True">Sách Thiếu Nhi</asp:HyperLink>
                               <br />
                           </td>
                       </tr>
@@ -158,6 +183,7 @@
                <tr>
                    <td>
                        <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/image/dangxuat.png" OnClick="ImageButton1_Click" CausesValidation="False" Height="61px" />
+                       
                        <table class="auto-style4">
                            <tr>
                                <td style="text-align: left">
@@ -179,15 +205,15 @@
                  </table>
                  <table style="width:100%;" align="center">
                  <tr>
-                     <td>
+                     <td class="auto-style12">
                          <asp:Image ID="Image1" runat="server" ImageUrl="~/image/TruyCap.png" />
                      </td>
                      <td>
                          <table>
     <tr>
  
-        <td>
-            <asp:Label ID="Label8" runat="server" ForeColor="#006699" Text="Số Lượng :"></asp:Label>
+        <td class="auto-style13">
+            <asp:Label ID="Label8" runat="server" ForeColor="#006699" Text="Số Lượng: "></asp:Label>
         </td>
         <td><%=Application["count_visit"].ToString() %></td>
         </tr>
@@ -231,21 +257,21 @@
         </form> 
         <div id ="footer"><table style="width:100%;">
             <tr>
-                <td style="background-color: #000066"></td>
+                <td style="background-color: yellowgreen"></td>
                 </tr>
 
             <tr>
-            <td style="background-color: #000066">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="auto-style7">Bản Quyền Thuộc Phạm Xuân Duy - Phạm Xuân Minh - Nguyễn Văn Tâm ©2017</span><br class="auto-style7" />
-                <span class="auto-style7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lớp 14CDTH01, Trường CĐCN Huế </span>
+            <td style="background-color: darkblue">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="auto-style7">Bản Quyền Thuộc Nhóm sinh viên thực hiện đề tài số 19 ©2021</span><br class="auto-style7" />
+                <span class="auto-style7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lớp DH18IM02, Trường Đại học Mở Thành phố Hồ Chí Minh</span>
                    <br class="auto-style7" />
-                <span class="auto-style7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hotline: 01636074246 - 01642799049</span><br class="auto-style7" />
+                <span class="auto-style7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hotline: 19001006</span><br class="auto-style7" />
                 <span class="auto-style7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-Địa chỉ email: </span><a href="mailto:htv.crazyboy@gmail.com-"><span class="auto-style9">xuanduy2809@gmail.com</span></a><span class="auto-style7"> - </span> <a href="mailto:yennguyen8866@gmail.com"><span class="auto-style9">xuanminh2512@gmail.com</span></a> </td>
+Địa chỉ email: </span><a href="mailto:1854050034@ou.edu.vn-"><span class="auto-style9">huyen@gmail.com</span></a><span class="auto-style7"> </span>
                 
                </tr>
             <tr>
-                <td style="background-color: #000066">
+                <td style="background-color: yellowgreen">
 
                 </td>
             </tr>
